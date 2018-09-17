@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='bpndtrustar',
-    version='1.0.1',
+    version='1.0.2',
     python_requires='>3.5.2',
     description='command line client for interacting with Trustar TIP',
     url='https://github.com/trbpnd/bpndtrustar',
