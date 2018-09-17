@@ -164,7 +164,7 @@ def main():
     parser.add_argument("-t", "--tags", nargs="+", help="Space separated list of tags that IOCs must be tagged with, default is to return IOCs regardless of tags. '-t s' to select tags from a list of valid tags.")
     parser.add_argument("-i", "--iocs", nargs="+", help="Get enrichment data for IOCs. Specify a space separated list of IOCs. Mutually exclusive with -r/--retrieve.")
     parser.add_argument("-o", "--output", help="Filename of file where results are to be saved.")
-    parser.add_argument("-c", "--config", help="Trustar configuration file.", default=os.getcwd()+'/trustar.cfg')
+    parser.add_argument("-c", "--config", help="Trustar configuration file.", default=os.getcwd()+'/trustar.conf')
     args = parser.parse_args()
 
     if not args.iocs and not args.retrieve:
